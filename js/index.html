@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         let a  = 98;
+         let v = "this is javascript";
+        console.log(a);
+        console.log(v);
+
+        function hello(){
+            console.log("hey this is kunal ");
+        }
+        
+
+        //object concept
+        let obj = {
+            m: 33,
+            n: 44,
+            //function inside the object 
+
+            func : function myfunct(number) {
+                console.log("the number is " + number );
+            }
+        }
+        
+        //Events in javascript 
+        document.addEventListener("click" , function click(){
+            console.log("clicked");
+
+            let conf = confirm("are you sure ");
+            console.log(conf);
+        })
+
+        let obj1 = {
+            a: this,
+            myfunc : function (number){
+                console.log(this);
+            }
+
+        }
+
+        obj1.myfunc();
+        console.log(obj1.a);
+        setTimeout(() => {
+            console.log("yeyyy i win");
+        }, 2000000);
+        console.log("niche wali script hu")
+    </script>
+</head>
+<body>
+
+    i am learning javascript
+</body>
+</html>
